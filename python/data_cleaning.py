@@ -1,10 +1,14 @@
+# Retail Sales Intelligence Project
+# Python data cleaning and validation
+# Day 1 project
+
 import csv
 
 total_sales = 0
 row_count = 0
 missing_values = 0
 
-with open("../data/sales_data.csv", newline="") as file:
+with open("data/sales_data.csv", newline="") as file:
     reader = csv.DictReader(file)
 
     for row in reader:
